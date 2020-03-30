@@ -4,10 +4,11 @@ public class Runner {
 
 	public static void main(String[] args) {
 		PeopleList peopleList = new PeopleList();
-		peopleList.peopleList.add(new Person("Bob", 18, "unemployed"));
-		peopleList.peopleList.add(new Person("Jeff", 24, "QA Software dev consultant"));
-		peopleList.peopleList.add(new Person("Rick", 56, "not going to give you up"));
+		peopleList.addPerson("Bob", 18, "unemployed");
+		peopleList.addPerson("Jeff", 24, "busy not giving you up");
+		peopleList.addPerson("Gerald", 54, "QA dev");
 		peopleList.findPerson("Jeff");
+		peopleList.showList();
 
 	}
 
